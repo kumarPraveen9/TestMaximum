@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace TestMaximum
 {
-    public class testCases <T> where T : IComparable
+    public class testCases<T> where T : IComparable
     {
+        T a, b, c;
         
         public T maxi(T a,T b,T c)
         {
@@ -20,8 +21,15 @@ namespace TestMaximum
             return a;
 
         }
-         
+       
+
+}
+    public class maxy<T> : testCases<T> where T : IComparable
+    {
+        public T maxmathod(T a, T b, T c)
+        {
+         return maxi(a,b,c);
+        }
     }
-   
 
 }
