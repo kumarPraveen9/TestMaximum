@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,14 +23,24 @@ namespace TestMaximum
 
         }
        
+       
 
 }
     public class maxy<T> : testCases<T> where T : IComparable
     {
         public T maxmathod(T a, T b, T c)
         {
-         return maxi(a,b,c);
+        T mx=   maxi(a, b, c);
+           
+             toPrint(mx);
+            return mx;
         }
+        public T toPrint(T mx)
+        {
+            System.Console.WriteLine(mx);
+            return mx;
+        }
+
     }
 
 }
